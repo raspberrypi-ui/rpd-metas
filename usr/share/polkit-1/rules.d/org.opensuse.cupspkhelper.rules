@@ -1,0 +1,7 @@
+polkit.addRule(function(action, subject) {
+    if (action.id.indexOf("org.opensuse.cupspkhelper.mechanism.") == 0 &&
+        subject.active == true && subject.local == true &&
+        (subject.isInGroup("sudo") || subject.isInGroup("lpadmin"))) {
+            return polkit.Result.YES;
+    }
+});

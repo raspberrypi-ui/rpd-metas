@@ -1,0 +1,30 @@
+Source: rpd-metas
+Section: x11
+Priority: optional
+Maintainer: Simon Long <simon@raspberrypi.com>
+Build-Depends: debhelper-compat (= 10)
+Standards-Version: 4.3.0
+
+Package: rpd-config
+Architecture: any
+Depends: ${misc:Depends}, desktop-file-utils
+Description: Config files for Raspberry Pi Desktop
+ Configuration files for X and Wayland desktops on Raspberry Pi
+
+Package: rpd-common
+Architecture: any
+Depends: ${misc:Depends}, rpd-config, lxsession, lightdm, pcmanfm, lxterminal
+Description: Common packages used by X and Wayland
+ Common applications used by X and Wayland desktops on Raspberry Pi
+
+Package: rpd-x-meta
+Architecture: any
+Depends: ${misc:Depends}, rpd-common, xserver-xorg, xinit, gldriver-test, openbox, lxpanel
+Description: Packages used by Raspberry Pi Desktop on X
+ X-specific packages used by Raspberry Pi Desktop
+
+Package: rpd-wayland-meta
+Architecture: any
+Depends: ${misc:Depends}, rpd-common, labwc, wf-panel-pi
+Description: Packages used by Raspberry Pi Desktop on Wayland
+ Wayland-specific packages used by Raspberry Pi Desktop

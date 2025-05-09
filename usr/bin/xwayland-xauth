@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# make sure there is a local config file for xsettings
+if ! [ -e $HOME/.config/xsettingsd/xsettingsd.conf ] ; then 
+	mkdir -p $HOME/.config/xsettingsd/
+	cp /etc/xsettingsd/xsettingsd.conf $HOME/.config/xsettingsd/
+fi
+
+# start xsettingsd for the supplied display after Xwayland is running
+(sleep 1 && DISPLAY="$1" xsettingsd ) &
+
+# start Xwayland itself with the .Xauthority file
+exec /usr/bin/Xwayland -auth /home/$USER/.Xauthority "$@"

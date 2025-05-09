@@ -1,0 +1,21 @@
+#!/bin/sh
+
+. /usr/bin/setup_env
+
+# Clean up after GDM (GDM sets the number of desktops to one)
+xprop -root -remove _NET_NUMBER_OF_DESKTOPS -remove _NET_DESKTOP_NAMES -remove _NET_CURRENT_DESKTOP 2> /dev/null
+
+# Launch DBus if needed
+if which dbus-launch >/dev/null && test -z "$DBUS_SESSION_BUS_ADDRESS"; then
+  eval "$(dbus-launch --sh-syntax --exit-with-session)"
+fi
+
+if [ ! -f "$HOME/.config/gtk-3.0/gtk.css" ] || ! grep -s -q tooltip "$HOME/.config/gtk-3.0/gtk.css" ; then
+  mkdir -p "$HOME/.config/gtk-3.0"
+  cat > "$HOME/.config/gtk-3.0/gtk.css" << EOF
+tooltip, .tooltip { border-radius: 0px; }
+EOF
+  sync
+fi
+
+exec /usr/bin/lxsession -s LXDE-pi -e LXDE

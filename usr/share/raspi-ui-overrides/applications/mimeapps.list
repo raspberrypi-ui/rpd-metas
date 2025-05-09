@@ -1,0 +1,12 @@
+[Default Applications]
+text/html=x-www-browser.desktop
+text/xml=x-www-browser.desktop
+application/xml=x-www-browser.desktop
+application/xhtml+xml=x-www-browser.desktop
+application/xhtml_xml=x-www-browser.desktop
+x-scheme-handler/http=x-www-browser.desktop
+x-scheme-handler/https=x-www-browser.desktop
+text/x-python=Thonny.desktop
+application/x-gtk-builder=glade.desktop
+application/pdf=org.gnome.Evince.desktop
+text/plain=org.xfce.mousepad.desktop

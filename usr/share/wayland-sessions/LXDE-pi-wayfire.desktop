@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=Wayfire Desktop on Wayland
+Exec=/usr/bin/wayfire-pi

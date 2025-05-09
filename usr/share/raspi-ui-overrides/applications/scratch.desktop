@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Exec=scratch %f
+TryExec=scratch
+Icon=scratch
+Terminal=false
+Name=Scratch
+Comment= Programming system and content development tool
+Categories=Application;Development;ComputerScience;
+MimeType=application/x-scratch-project

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Safety Information
+TryExec=/usr/bin/x-www-browser
+Exec=x-www-browser https://rptl.io/safety-info
+Icon=rpi
+Terminal=false
+Categories=Help;
+StartupNotify=true

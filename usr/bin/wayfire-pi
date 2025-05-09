@@ -1,0 +1,23 @@
+#!/bin/sh
+
+. /usr/bin/setup_env
+
+export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+export DESKTOP_SESSION=LXDE-pi-wayfire
+export WLR_XWAYLAND=/usr/bin/xwayland-xauth
+export XAUTHORITY=~/.Xauthority
+
+if [ -f "$HOME/.config/gtk-3.0/gtk.css" ] ; then
+  rm "$HOME/.config/gtk-3.0/gtk.css"
+  sync
+fi
+
+if ! raspi-config nonint is_pi ; then
+  export WLR_NO_HARDWARE_CURSORS=1
+fi
+
+if raspi-config nonint gpu_has_mmu || ! raspi-config nonint is_pi ; then
+    exec /usr/bin/wayfire $@
+else
+    exec /usr/bin/wayfire -p $@
+fi

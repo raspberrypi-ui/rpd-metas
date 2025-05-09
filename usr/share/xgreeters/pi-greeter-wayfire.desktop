@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=LightDM Pi Greeter (Wayland)
+Comment=This runs the Pi greeter in a Wayland session, it should only be run from LightDM
+Exec=/usr/bin/wayfire-pi -c /usr/share/greeter.ini
+Type=Application
+X-Ubuntu-Gettext-Domain=lightdm
+X-LightDM-Session-Type=wayland
+

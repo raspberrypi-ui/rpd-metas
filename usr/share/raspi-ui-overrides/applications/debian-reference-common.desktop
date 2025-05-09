@@ -1,0 +1,24 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Debian Reference
+Comment=Debian Reference Guide
+Name[en_CA]=Debian Reference
+Name[en_GB]=Debian Reference
+Name[fr_FR]=Guide de référence pour Debian
+Name[it_IT]=La guida Debian
+Name[de_DE]=Debian-Referenz
+Name[es_ES]=Guía de referencia Debian
+Name[pt_BR]=Referência Debian
+Name[pl_PL]=Debian Reference
+Name[zh_TW]=Debian 參考手冊
+Name[zh_CN]=Debian 参考手册
+Name[ja_JP]=Debian リファレンス
+Name[ru_RU]=Справочник по Debian
+Name[fi_FI]=Debian-referenssi
+Keywords=user;shell;command;documentation;manual;help;guide;debian;
+Exec=debian-reference
+TryExec=debian-reference
+Icon=debian-reference
+Terminal=false
+Categories=Help;

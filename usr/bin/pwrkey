@@ -1,0 +1,9 @@
+#!/bin/sh
+if ! pgrep -f pishutdown ; then
+  /usr/bin/pishutdown
+else
+  if ! raspi-config nonint is_pi500 ; then
+    /usr/bin/pkill orca
+    /sbin/shutdown -h now
+  fi
+fi

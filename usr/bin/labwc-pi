@@ -1,0 +1,21 @@
+#!/bin/sh
+
+. /usr/bin/setup_env
+
+if [ -f "$HOME/.config/gtk-3.0/gtk.css" ] ; then
+  rm "$HOME/.config/gtk-3.0/gtk.css"
+  sync
+fi
+
+if [ ! -f "$HOME/.config/kanshi/config" ] ; then
+  mkdir -p "$HOME/.config/kanshi"
+  touch "$HOME/.config/kanshi/config"
+fi
+
+if raspi-config nonint is_pi && ! raspi-config nonint gpu_has_mmu ; then
+    export WLR_RENDERER=pixman
+fi
+
+exec /usr/bin/labwc -m $@
+
+

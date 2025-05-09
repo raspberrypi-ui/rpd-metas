@@ -1,0 +1,19 @@
+#!/bin/sh
+
+export XDG_DATA_DIRS="~/.local/share:/usr/local/share:/usr/share/raspi-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg${XDG_DATA_DIRS:+:$XDG_DATA_DIRS}"
+export XDG_MENU_PREFIX="lxde-pi-"
+
+# Ensure the existence of the 'Desktop' folder
+if [ -e "$HOME/.config/user-dirs.dirs" ]; then
+  . "$HOME/.config/user-dirs.dirs"
+else
+  XDG_DESKTOP_DIR="$HOME/Desktop"
+fi
+mkdir -p "$XDG_DESKTOP_DIR"
+
+# Enable GTK+3 integration for OpenOffice.org, if available.
+export SAL_USE_VCLPLUGIN=gtk3
+
+# Make sure Qt themeing loads
+export QT_QPA_PLATFORMTHEME=qt5ct
+

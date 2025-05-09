@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Power Key Inhibit
+Comment=Inhibit the power key while desktop runs
+Exec=systemd-inhibit --what=handle-power-key gtk-nop
+Terminal=false
+Type=Application
+NoDisplay=true

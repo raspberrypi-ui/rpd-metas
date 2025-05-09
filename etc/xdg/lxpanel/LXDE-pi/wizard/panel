@@ -1,0 +1,38 @@
+# lxpanel <profile> config file. Manually editing is not recommended.
+# Use preference dialog in lxpanel to adjust config when you can.
+
+Global {
+  edge=top
+  align=right
+  margin=0
+  widthtype=request
+  width=100
+  height=36
+  transparent=0
+  tintcolor=#000000
+  alpha=0
+  autohide=0
+  heightwhenhidden=2
+  setdocktype=1
+  setpartialstrut=1
+  usefontcolor=0
+  fontsize=12
+  fontcolor=#ffffff
+  usefontsize=0
+  background=0
+  backgroundfile=/usr/share/lxpanel/images/background.png
+  iconsize=36
+  monitor=0
+  point_at_menu=0
+}
+Plugin {
+  type=bluetooth
+  Config {
+    autopair=1
+  }
+}
+Plugin {
+  type=volumepulse
+  Config {
+  }
+}

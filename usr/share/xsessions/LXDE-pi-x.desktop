@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=Raspberry Pi Desktop on X
+Exec=/usr/bin/startlxde-pi

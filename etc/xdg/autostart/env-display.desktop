@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=env_display
+Comment=Set display variable for systemd user services
+NoDisplay=false
+Exec=/usr/bin/dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY
