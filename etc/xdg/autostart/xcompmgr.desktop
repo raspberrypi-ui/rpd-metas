@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=xcompmgr
+Comment=Start xcompmgr compositor
+NoDisplay=true
+Exec=/usr/bin/cmstart.sh
