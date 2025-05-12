@@ -1,0 +1,48 @@
+#!/bin/sh
+
+set -e
+
+case "${1}" in
+  configure)
+    pwdlines=$(getent passwd)
+    while read line
+    do
+        USHELL=$(echo "$line" | cut -d: -f7)
+        USER=$(echo "$line" | cut -d: -f1)
+        if grep -q "$USHELL" /etc/shells ; then
+          HOME_DIR=$(echo "$line" | cut -d: -f6)/
+	  MODEL=$(grep ^XKBMODEL= /etc/default/keyboard | tail -1 | cut -d= -f2 | tr -d '"')
+	  LAYOUT=$(grep ^XKBLAYOUT= /etc/default/keyboard | tail -1 | cut -d= -f2 | tr -d '"')
+	  VARIANT=$(grep ^XKBVARIANT= /etc/default/keyboard | tail -1 | cut -d= -f2 | tr -d '"')
+	  OPTIONS=$(grep ^XKBOPTIONS= /etc/default/keyboard | tail -1 | cut -d= -f2 | tr -d '"')
+	  mkdir -p "$HOME_DIR/.config/labwc/"
+	  chown -R $USER: "$HOME_DIR/.config/"
+	  UFILE="$HOME_DIR/.config/labwc/environment"
+	  if [ -e $UFILE ] ; then
+	    if grep -q XKB_DEFAULT_MODEL $UFILE ; then sed -i s/XKB_DEFAULT_MODEL.*/XKB_DEFAULT_MODEL=$MODEL/ $UFILE ; else echo XKB_DEFAULT_MODEL=$MODEL >> $UFILE ; fi
+	    if grep -q XKB_DEFAULT_LAYOUT $UFILE ; then sed -i s/XKB_DEFAULT_LAYOUT.*/XKB_DEFAULT_LAYOUT=$LAYOUT/ $UFILE ; else echo XKB_DEFAULT_LAYOUT=$LAYOUT >> $UFILE ; fi
+	    if grep -q XKB_DEFAULT_VARIANT $UFILE ; then sed -i s/XKB_DEFAULT_VARIANT.*/XKB_DEFAULT_VARIANT=$VARIANT/ $UFILE ; else echo XKB_DEFAULT_VARIANT=$VARIANT >> $UFILE ; fi
+	    if grep -q XKB_DEFAULT_OPTIONS $UFILE ; then sed -i s/XKB_DEFAULT_OPTIONS.*/XKB_DEFAULT_OPTIONS=$OPTIONS/ $UFILE ; else echo XKB_DEFAULT_OPTIONS=$OPTIONS >> $UFILE ; fi
+	  else
+	    echo XKB_DEFAULT_MODEL=$MODEL >> $UFILE
+	    echo XKB_DEFAULT_LAYOUT=$LAYOUT >> $UFILE
+	    echo XKB_DEFAULT_VARIANT=$VARIANT >> $UFILE
+	    echo XKB_DEFAULT_OPTIONS=$OPTIONS >> $UFILE
+	  fi
+	  chown $USER: $UFILE
+        fi
+    done <<EOF
+    $pwdlines
+EOF
+    ;;
+
+  abort-upgrade|abort-remove|abort-deconfigure)
+    ;;
+
+  *)
+    echo "postinst called with unknown argument \`${1}'" >&2
+    exit 1
+    ;;
+esac
+
+#DEBHELPER#
