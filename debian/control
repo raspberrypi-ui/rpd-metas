@@ -14,7 +14,8 @@ Description: Config files for Raspberry Pi Desktop
 Package: rpd-common
 Architecture: any
 Depends: ${misc:Depends}, rpd-config, lxsession, lightdm, pcmanfm, lxterminal, pi-greeter, rpd-plym-splash,
- polkitd, pkexec, pishutdown, libfm-modules, gvfs, qt5ct, qt5-style-plugins, gtk-nop
+ polkitd, pkexec, pishutdown, libfm-modules, gvfs, qt5ct, qt5-style-plugins, gtk-nop, gui-pkinst, pprompt,
+ rfkill
 Description: Common packages used by X and Wayland
  Common applications used by X and Wayland desktops on Raspberry Pi
 
@@ -38,21 +39,21 @@ Description: Raspberry Pi Desktop utility applications
 
 Package: rpd-applications
 Architecture: any
-Depends: ${misc:Depends}, geany, thonny, vlc, firefox, rpi-firefox-mods, chromium, rpi-chromium-mods
+Depends: ${misc:Depends}, geany, thonny, vlc, firefox, rpi-firefox-mods, chromium, rpi-chromium-mods, libwidevinecdm0
 Description: Raspberry Pi Desktop general applications
  General applications for Raspberry Pi Desktop
 
 Package: rpd-x-meta
 Architecture: any
-Depends: ${misc:Depends}, rpd-common, xserver-xorg, xinit, gldriver-test, xcompmgr, x11-xserver-utils, openbox, lxpanel,
- lxplug-menu, lxplug-updater, lxplug-ejecter, lxplug-bluetooth, lxplug-netman, lxplug-volumepulse, lxplug-batt
+Depends: ${misc:Depends}, rpd-common, xserver-xorg, xinit, gldriver-test, xcompmgr, x11-xserver-utils, openbox, lxpanel, scrot,
+ lxplug-menu, lxplug-updater, lxplug-ejecter, lxplug-bluetooth, lxplug-netman, lxplug-volumepulse, lxplug-batt, lxplug-cpu, lxplug-cputemp
 Description: Packages used by Raspberry Pi Desktop on X
  X-specific packages used by Raspberry Pi Desktop
 
 Package: rpd-wayland-meta
 Architecture: any
-Depends: ${misc:Depends}, rpd-common, labwc, wf-panel-pi, kanshi, swayidle, wlopm, xsettingsd,
- wfplug-menu, wfplug-updater, wfplug-ejecter, wfplug-bluetooth, wfplug-netman, wfplug-volumepulse, wfplug-batt
+Depends: ${misc:Depends}, rpd-common, labwc, wf-panel-pi, kanshi, swayidle, wlopm, xsettingsd, grim, swaylock,
+ wfplug-menu, wfplug-updater, wfplug-ejecter, wfplug-bluetooth, wfplug-netman, wfplug-volumepulse, wfplug-batt, wfplug-cpu, wfplug-cputemp
 Description: Packages used by Raspberry Pi Desktop on Wayland
  Wayland-specific packages used by Raspberry Pi Desktop
 
