@@ -1,9 +1,10 @@
 [Desktop Entry]
 Type=Application
-Name=Preferred Browser
+Name=Web Browser
 TryExec=/usr/bin/x-www-browser
 Exec=x-www-browser %U
 Terminal=false
 StartupNotify=true
+Icon=web-browser
 NoDisplay=true
 MimeType=text/html;text/xml;application/xml;application/xhtml+xml;application/xhtml_xml;x-scheme-handler/http;x-scheme-handler/https

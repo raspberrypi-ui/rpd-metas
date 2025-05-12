@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Terminal
+TryExec=/usr/bin/x-terminal-emulator
+Exec=x-terminal-emulator
+Terminal=false
+StartupNotify=true
+Icon=terminal
+NoDisplay=true

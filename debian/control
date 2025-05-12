@@ -13,18 +13,57 @@ Description: Config files for Raspberry Pi Desktop
 
 Package: rpd-common
 Architecture: any
-Depends: ${misc:Depends}, rpd-config, lxsession, lightdm, pcmanfm, lxterminal
+Depends: ${misc:Depends}, rpd-config, lxsession, lightdm, pcmanfm, lxterminal, pi-greeter, rpd-plym-splash,
+ polkitd, pkexec, pishutdown, libfm-modules, gvfs, qt5ct, qt5-style-plugins, gtk-nop
 Description: Common packages used by X and Wayland
  Common applications used by X and Wayland desktops on Raspberry Pi
 
+Package: rpd-theme
+Architecture: any
+Depends: ${misc:Depends}, pixflat-theme, pixflat-icons, fonts-piboto, fonts-liberation2, rpd-wallpaper
+Description: Raspberry Pi Desktop theme packages
+ Packages containing theme components for Raspberry Pi Desktop
+
+Package: rpd-preferences
+Architecture: any
+Depends: ${misc:Depends}, pipanel, rc-gui, raindrop, rasputin, rpinters, rp-prefapps
+Description: Raspberry Pi Desktop preference applications
+ Preference applications for Raspberry Pi Desktop
+
+Package: rpd-utilities
+Architecture: any
+Depends: ${misc:Depends}, agnostics, rp-bookshelf, mousepad, eom, piclone, lxtask, galculator, xarchiver, evince
+Description: Raspberry Pi Desktop utility applications
+ Utility applications for Raspberry Pi Desktop
+
+Package: rpd-applications
+Architecture: any
+Depends: ${misc:Depends}, geany, thonny, vlc, firefox, rpi-firefox-mods, chromium, rpi-chromium-mods
+Description: Raspberry Pi Desktop general applications
+ General applications for Raspberry Pi Desktop
+
 Package: rpd-x-meta
 Architecture: any
-Depends: ${misc:Depends}, rpd-common, xserver-xorg, xinit, gldriver-test, openbox, lxpanel
+Depends: ${misc:Depends}, rpd-common, xserver-xorg, xinit, gldriver-test, xcompmgr, x11-xserver-utils, openbox, lxpanel,
+ lxplug-menu, lxplug-updater, lxplug-ejecter, lxplug-bluetooth, lxplug-netman, lxplug-volumepulse, lxplug-batt
 Description: Packages used by Raspberry Pi Desktop on X
  X-specific packages used by Raspberry Pi Desktop
 
 Package: rpd-wayland-meta
 Architecture: any
-Depends: ${misc:Depends}, rpd-common, labwc, wf-panel-pi
+Depends: ${misc:Depends}, rpd-common, labwc, wf-panel-pi, kanshi, swayidle, wlopm, xsettingsd,
+ wfplug-menu, wfplug-updater, wfplug-ejecter, wfplug-bluetooth, wfplug-netman, wfplug-volumepulse, wfplug-batt
 Description: Packages used by Raspberry Pi Desktop on Wayland
  Wayland-specific packages used by Raspberry Pi Desktop
+
+Package: rpd-x-all
+Architecture: any
+Depends: ${misc:Depends}, rpd-x-meta, rpd-theme, rpd-preferences, rpd-utilities, rpd-applications
+Description: Complete Raspberry Pi Desktop on X
+ Metapackage for complete Raspberry Pi Desktop on X
+
+Package: rpd-wayland-all
+Architecture: any
+Depends: ${misc:Depends}, rpd-wayland-meta, rpd-theme, rpd-preferences, rpd-utilities, rpd-applications
+Description: Complete Raspberry Pi Desktop on Wayland
+ Metapackage for complete Raspberry Pi Desktop on Wayland

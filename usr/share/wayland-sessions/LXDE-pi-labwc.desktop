@@ -1,4 +1,4 @@
 [Desktop Entry]
 Type=Application
-Name=Labwc Desktop on Wayland
+Name=Raspberry Pi Desktop on Wayland
 Exec=/usr/bin/labwc-pi

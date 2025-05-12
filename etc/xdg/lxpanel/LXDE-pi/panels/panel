@@ -56,13 +56,13 @@ Plugin {
   type=launchbar
   Config {
     Button {
-      id=lxde-x-www-browser.desktop
+      id=x-www-browser.desktop
     }
     Button {
       id=pcmanfm.desktop
     }
     Button {
-      id=lxterminal.desktop
+      id=x-terminal-emulator.desktop
     }
   }
 }
