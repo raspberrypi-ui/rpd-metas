@@ -8,8 +8,9 @@ Standards-Version: 4.3.0
 Package: rpd-common
 Architecture: any
 Depends: ${misc:Depends}, lxsession, lightdm, pcmanfm, lxterminal, pi-greeter, rpd-plym-splash,
- polkitd, pkexec, pishutdown, libfm-modules, gvfs, qt5ct, qt5-style-plugins, gtk-nop, gui-pkinst, pprompt,
- rfkill, mate-polkit-bin, desktop-file-utils
+ polkitd, pkexec, pishutdown, libfm-modules, gvfs, gvfs-backends, gvfs-fuse, qt5ct, qt5-style-plugins,
+ gtk-nop, gui-pkinst, pprompt, rfkill, mate-polkit-bin, cups, pi-printer-support, gnome-keyring,
+ desktop-file-utils
 Description: Common packages used by X and Wayland
  Common applications used by X and Wayland desktops on Raspberry Pi
 
@@ -47,20 +48,32 @@ Description: Packages used by Raspberry Pi Desktop on X
 
 Package: rpd-wayland-core
 Architecture: any
-Depends: ${misc:Depends}, rpd-common, labwc, wf-panel-pi, kanshi, swayidle, wlopm, xsettingsd, grim, swaylock, autotouch,
+Depends: ${misc:Depends}, rpd-common, labwc, wf-panel-pi, kanshi, swayidle, wlopm, xsettingsd, grim, swaylock, autotouch, squeekboard,
  wfplug-menu, wfplug-updater, wfplug-ejecter, wfplug-bluetooth, wfplug-netman, wfplug-volumepulse, wfplug-batt, wfplug-cpu, wfplug-cputemp,
  wfplug-gpu, wfplug-power
 Description: Packages used by Raspberry Pi Desktop on Wayland
  Wayland-specific packages used by Raspberry Pi Desktop
 
+Package: rpd-x-extras
+Architecture: any
+Depends: ${misc:Depends}, realvnc-vnc-server
+Description: X-specific additional packages
+ X-specific additional packages used by Raspberry Pi Desktop
+
+Package: rpd-wayland-extras
+Architecture: any
+Depends: ${misc:Depends}, wayvnc
+Description: Wayland-specific additional packages
+ Wayland-specific additional packages used by Raspberry Pi Desktop
+
 Package: rpd-x-all
 Architecture: any
-Depends: ${misc:Depends}, rpd-x-core, rpd-theme, rpd-preferences, rpd-utilities, rpd-applications
+Depends: ${misc:Depends}, rpd-x-core, rpd-x-extras, rpd-theme, rpd-preferences, rpd-utilities, rpd-applications
 Description: Complete Raspberry Pi Desktop on X
  Metapackage for complete Raspberry Pi Desktop on X
 
 Package: rpd-wayland-all
 Architecture: any
-Depends: ${misc:Depends}, rpd-wayland-core, rpd-theme, rpd-preferences, rpd-utilities, rpd-applications
+Depends: ${misc:Depends}, rpd-wayland-core, rpd-wayland-extras, rpd-theme, rpd-preferences, rpd-utilities, rpd-applications
 Description: Complete Raspberry Pi Desktop on Wayland
  Metapackage for complete Raspberry Pi Desktop on Wayland
