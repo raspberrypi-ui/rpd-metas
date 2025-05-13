@@ -1,0 +1,3 @@
+@lxpanel --profile rpd-x
+@pcmanfm --desktop --profile rpd
+@xscreensaver -no-splash

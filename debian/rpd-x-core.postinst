@@ -5,7 +5,7 @@ set -e
 case "${1}" in
   configure)
     update-alternatives --install /usr/bin/x-session-manager \
-      x-session-manager /usr/bin/startlxde-pi 90 \
+      x-session-manager /usr/bin/startx-rpd 90 \
       --slave /usr/share/man/man1/x-session-manager.1.gz \
       x-session-manager.1.gz /usr/share/man/man1/startlxde.1.gz
     ;;

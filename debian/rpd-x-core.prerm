@@ -4,7 +4,7 @@ set -e
 
 case "${1}" in
   remove|deconfigure)
-    update-alternatives --remove x-session-manager /usr/bin/startlxde-pi
+    update-alternatives --remove x-session-manager /usr/bin/startx-rpd
     ;;
 
   upgrade|failed-upgrade)

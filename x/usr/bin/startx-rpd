@@ -18,4 +18,4 @@ EOF
   sync
 fi
 
-exec /usr/bin/lxsession -s LXDE-pi -e LXDE
+exec /usr/bin/lxsession -s rpd-x -e LXDE
