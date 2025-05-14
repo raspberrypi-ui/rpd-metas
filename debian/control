@@ -48,9 +48,8 @@ Description: Raspberry Pi Desktop developer libraries and applications
 
 Package: rpd-graphics
 Architecture: any
-Depends: ${misc:Depends}, gstreamer1.0-x, gstreamer1.0-omx, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good,
- gstreamer1.0-plugins-bad, gstreamer1.0-alsa, gstreamer1.0-libav, vulkan-tools, mesa-vulkan-drivers, libgles1, libgles2-mesa,
- ffmpeg
+Depends: ${misc:Depends}, gstreamer1.0-x, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-plugins-bad,
+ gstreamer1.0-alsa, gstreamer1.0-libav, vulkan-tools, mesa-vulkan-drivers, libgles1, libgles2-mesa, ffmpeg
 Description: Raspberry Pi Desktop graphics libraries and applications
  Video and graphics support
 
