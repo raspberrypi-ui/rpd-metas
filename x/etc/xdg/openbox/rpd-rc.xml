@@ -263,32 +263,32 @@
     <!--keybindings for LXPanel -->
     <keybind key="Super_L">
       <action name="Execute">
-        <command>lxpanelctl menu</command>
+        <command>lxpanelctl-pi command smenu menu</command>
       </action>
     </keybind>
     <keybind key="A-F2">
       <action name="Execute">
-        <command>lxpanelctl run</command>
+        <command>lxpanelctl-pi run</command>
       </action>
     </keybind>
     <keybind key="C-Escape">
       <action name="Execute">
-        <command>lxpanelctl menu</command>
+        <command>lxpanelctl-pi command smenu menu</command>
       </action>
     </keybind>
     <keybind key="C-A-S">
       <action name="Execute">
-         <command>lxpanelctl move</command>
+         <command>lxpanelctl-pi move</command>
       </action>
     </keybind>
     <keybind key="C-A-B">
       <action name="Execute">
-         <command>lxpanelctl command bluetooth menu</command>
+         <command>lxpanelctl-pi command bluetooth menu</command>
       </action>
     </keybind>
     <keybind key="C-A-W">
       <action name="Execute">
-         <command>lxpanelctl command netman menu</command>
+         <command>lxpanelctl-pi command netman menu</command>
       </action>
     </keybind>
     <keybind key="A-F11">
@@ -296,40 +296,27 @@
     </keybind>
     <keybind key="C-A-M">
       <action name="Execute">
-         <command>lxpanelctl command magnifier toggle</command>
+         <command>lxpanelctl-pi command magnifier toggle</command>
       </action>
     </keybind>
-    <!-- Launch Task Manager with Ctrl+Shift+Escape -->
     <keybind key="C-S-Escape">
       <action name="Execute">
         <command>lxtask</command>
       </action>
     </keybind>
-    <!-- Keybindings for audio volume media keys -->
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>sh -c "lxpanelctl command volumepulse volu; lxpanelctl command volumealsabt volu"</command>
+        <command>lxpanelctl-pi command volumepulse volu</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>sh -c "lxpanelctl command volumepulse vold; lxpanelctl command volumealsabt vold"</command>
+        <command>lxpanelctl-pi command volumepulse vold</command>
       </action>
     </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
-        <command>sh -c "lxpanelctl command volumepulse mute; lxpanelctl command volumealsabt mute"</command>
-      </action>
-    </keybind>
-    <!-- Keybindings for pitop -->
-    <keybind key="0xC6">
-      <action name="Execute">
-        <command>sh -c "if test -e /usr/bin/pt-brightness; then /usr/bin/pt-brightness -d; fi"</command>
-      </action>
-    </keybind>
-    <keybind key="0xC7">
-      <action name="Execute">
-        <command>sh -c "if test -e /usr/bin/pt-brightness; then /usr/bin/pt-brightness -i; fi"</command>
+        <command>lxpanelctl-pi command volumepulse mute</command>
       </action>
     </keybind>
     <keybind key="0xC8">
