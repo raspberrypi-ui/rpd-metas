@@ -15,7 +15,8 @@ Description: Common packages used by X and Wayland
 
 Package: rpd-theme
 Architecture: any
-Depends: ${misc:Depends}, pixflat-theme, pixflat-icons, fonts-piboto, fonts-liberation2, rpd-wallpaper
+Depends: ${misc:Depends}, pixflat-theme, pixflat-icons, fonts-piboto, fonts-liberation2, rpd-wallpaper,
+ pixtrix-icons, rpd-wallpaper-trix, fonts-nunito-sans
 Description: Raspberry Pi Desktop theme packages
  Packages containing theme components for Raspberry Pi Desktop
 
@@ -57,7 +58,7 @@ Package: rpd-x-core
 Architecture: any
 Depends: ${misc:Depends}, rpd-common, xserver-xorg, xinit, gldriver-test, xcompmgr, x11-xserver-utils, openbox, lxpanel-pi,
  lxplug-menu, lxplug-updater, lxplug-ejecter, lxplug-bluetooth, lxplug-netman, lxplug-volumepulse, lxplug-batt, lxplug-cpu, lxplug-cputemp,
- lxplug-gpu, lxplug-power, lxplug-magnifier
+ lxplug-gpu, lxplug-power, lxplug-clock, lxplug-magnifier
 Description: Packages used by Raspberry Pi Desktop on X
  X-specific packages used by Raspberry Pi Desktop
 
@@ -65,7 +66,7 @@ Package: rpd-wayland-core
 Architecture: any
 Depends: ${misc:Depends}, rpd-common, labwc, wf-panel-pi, kanshi, swayidle, wlopm, xsettingsd, swaylock, autotouch,
  wfplug-menu, wfplug-updater, wfplug-ejecter, wfplug-bluetooth, wfplug-netman, wfplug-volumepulse, wfplug-batt, wfplug-cpu, wfplug-cputemp,
- wfplug-gpu, wfplug-power, wfplug-connect, wfplug-squeek
+ wfplug-gpu, wfplug-power, wfplug-clock, wfplug-connect, wfplug-squeek
 Description: Packages used by Raspberry Pi Desktop on Wayland
  Wayland-specific packages used by Raspberry Pi Desktop
 

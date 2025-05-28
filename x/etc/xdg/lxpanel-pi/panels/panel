@@ -28,8 +28,6 @@ Global {
 Plugin {
   type=smenu
   Config {
-    padding=4
-    image=start-here
     system {
     }
     separator {
@@ -44,6 +42,11 @@ Plugin {
       image=system-shutdown
       command=logout
     }
+  }
+}
+Plugin {
+  type=separator
+  Config {
   }
 }
 Plugin {
@@ -99,14 +102,18 @@ Plugin {
   }
 }
 Plugin {
-  type=updater
+  type=power
   Config {
   }
 }
 Plugin {
   type=ejecter
   Config {
-    AutoHide=1
+  }
+}
+Plugin {
+  type=updater
+  Config {
   }
 }
 Plugin {
@@ -149,13 +156,8 @@ Plugin {
   }
 }
 Plugin {
-  type=dclock
+  type=clock
   Config {
-    ClockFmt=%R
-    TooltipFmt=%A %x
-    BoldFont=0
-    IconOnly=0
-    CenterText=1
   }
 }
 Plugin {

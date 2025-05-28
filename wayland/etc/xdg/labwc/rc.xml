@@ -6,19 +6,19 @@
     <cornerRadius>0</cornerRadius>
     <keepBorder>yes</keepBorder>
     <font place="ActiveWindow">
-      <name>PibotoLt</name>
+      <name>Nunito Sans Light</name>
       <size>12</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
-      <name>PibotoLt</name>
+      <name>Nunito Sans Light</name>
       <size>12</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="OnScreenDisplay">
-      <name>PibotoLt</name>
+      <name>Nunito Sans Light</name>
       <size>12</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
