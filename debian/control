@@ -10,7 +10,7 @@ Architecture: any
 Depends: ${misc:Depends}, lxsession, lightdm, pcmanfm, lxterminal, pi-greeter, rpd-plym-splash,
  polkitd, pkexec, pishutdown, libfm-modules, gvfs, gvfs-backends, gvfs-fuse, qt5ct, qt5-style-plugins,
  gtk-nop, gui-pkinst, pprompt, rfkill, mate-polkit-bin, gnome-keyring, desktop-file-utils,
- pulseaudio, pipewire, pipewire-pulse, pulseaudio-module-bluetooth, libspa-0.2-bluetooth
+ pulseaudio, pipewire, pipewire-pulse, wireplumber, pulseaudio-module-bluetooth, libspa-0.2-bluetooth
 Description: Common packages used by X and Wayland
  Common applications used by X and Wayland desktops on Raspberry Pi
 
