@@ -6,21 +6,21 @@
     <cornerRadius>0</cornerRadius>
     <keepBorder>yes</keepBorder>
     <font place="ActiveWindow">
-      <name>Nunito Sans Light</name>
+      <name>Nunito Sans</name>
       <size>12</size>
-      <weight>Normal</weight>
+      <weight>Light</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
-      <name>Nunito Sans Light</name>
+      <name>Nunito Sans</name>
       <size>12</size>
-      <weight>Normal</weight>
+      <weight>Light</weight>
       <slant>Normal</slant>
     </font>
     <font place="OnScreenDisplay">
-      <name>Nunito Sans Light</name>
+      <name>Nunito Sans</name>
       <size>12</size>
-      <weight>Normal</weight>
+      <weight>Light</weight>
       <slant>Normal</slant>
     </font>
     <dropShadows>yes</dropShadows>
