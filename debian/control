@@ -9,7 +9,7 @@ Package: rpd-common
 Architecture: any
 Depends: ${misc:Depends}, lxsession, lightdm, pcmanfm, lxterminal, pi-greeter, rpd-plym-splash,
  polkitd, pkexec, pishutdown, libfm-modules, gvfs, gvfs-backends, gvfs-fuse, qt5ct, qt5-style-plugins,
- gtk-nop, gui-pkinst, pprompt, rfkill, mate-polkit-bin, gnome-keyring, desktop-file-utils,
+ gtk-nop, gui-pkinst, pprompt, rfkill, mate-polkit-bin, gnome-keyring, desktop-file-utils, raspi-config,
  pulseaudio, pipewire, pipewire-pulse, wireplumber, pulseaudio-module-bluetooth, libspa-0.2-bluetooth
 Description: Common packages used by X and Wayland
  Common applications used by X and Wayland desktops on Raspberry Pi
@@ -65,7 +65,7 @@ Description: Packages used by Raspberry Pi Desktop on X
 
 Package: rpd-wayland-core
 Architecture: any
-Depends: ${misc:Depends}, rpd-common, labwc, wf-panel-pi, kanshi, swayidle, wlopm, xsettingsd, swaylock, autotouch,
+Depends: ${misc:Depends}, rpd-common, labwc, wf-panel-pi, kanshi, swayidle, wlopm, xsettingsd, swaylock, autotouch, raspi-config,
  wfplug-menu, wfplug-updater, wfplug-ejecter, wfplug-bluetooth, wfplug-netman, wfplug-volumepulse, wfplug-batt, wfplug-cpu, wfplug-cputemp,
  wfplug-gpu, wfplug-power, wfplug-clock, wfplug-connect, wfplug-squeek
 Description: Packages used by Raspberry Pi Desktop on Wayland
