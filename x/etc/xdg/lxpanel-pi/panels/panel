@@ -28,20 +28,6 @@ Global {
 Plugin {
   type=smenu
   Config {
-    system {
-    }
-    separator {
-    }
-    item {
-      image=system-run
-      command=run
-    }
-    separator {
-    }
-    item {
-      image=system-shutdown
-      command=logout
-    }
   }
 }
 Plugin {
