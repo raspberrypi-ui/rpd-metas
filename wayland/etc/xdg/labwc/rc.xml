@@ -2,7 +2,7 @@
 <openbox_config xmlns="http://openbox.org/3.4/rc">
 
   <theme>
-    <name>PiXflat</name>
+    <name>PiXtrix</name>
     <cornerRadius>0</cornerRadius>
     <keepBorder>yes</keepBorder>
     <font place="ActiveWindow">
