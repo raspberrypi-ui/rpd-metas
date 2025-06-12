@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=LightDM Pi Greeter (labwc)
-Comment=This runs the Pi greeter in a Wayland session, it should only be run from LightDM
-Exec=/usr/bin/labwc -C /etc/xdg/labwc-greeter/
-Type=Application
-X-Ubuntu-Gettext-Domain=lightdm
-X-LightDM-Session-Type=wayland
-
