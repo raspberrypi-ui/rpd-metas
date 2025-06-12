@@ -1,0 +1,2 @@
+#!/bin/sh
+env GLIBC_TUNABLES=glibc.malloc.mmap_threshold=131072:glibc.malloc.trim_threshold=131072:glibc.malloc.tcache_count=0 pcmanfm --desktop
