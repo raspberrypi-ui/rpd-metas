@@ -5,4 +5,4 @@ Exec=/usr/bin/create_xauth
 Terminal=false
 Type=Application
 NoDisplay=true
-OnlyShowIn=LXDE-wayland;
+OnlyShowIn=rpd-wayland;
