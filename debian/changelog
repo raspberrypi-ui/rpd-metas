@@ -1,3 +1,9 @@
+rpd-metas (0.3) bookworm; urgency=medium
+
+  * Use new lpplug packages
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 18 Jun 2025 14:51:10 +0100
+
 rpd-metas (0.2) bookworm; urgency=medium
 
   * Add missing networking dependencies

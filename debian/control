@@ -18,8 +18,8 @@ Description: Common packages used by X and Wayland
 Package: rpd-x-core
 Architecture: all
 Depends: ${misc:Depends}, rpd-common, xserver-xorg, xinit, gldriver-test, xcompmgr, x11-xserver-utils, openbox, lxpanel-pi,
- lxplug-menu, lxplug-updater, lxplug-ejecter, lxplug-bluetooth, lxplug-netman, lxplug-volumepulse, lxplug-batt, lxplug-cpu, lxplug-cputemp,
- lxplug-gpu, lxplug-power, lxplug-clock, lxplug-magnifier
+ lpplug-menu, lpplug-updater, lpplug-ejecter, lpplug-bluetooth, lpplug-netman, lpplug-volumepulse, lpplug-batt, lpplug-cpu, lpplug-cputemp,
+ lpplug-gpu, lpplug-power, lpplug-clock, lpplug-magnifier
 Description: Packages used by Raspberry Pi Desktop on X
  X-specific packages used by Raspberry Pi Desktop
 
