@@ -6,7 +6,7 @@ Build-Depends: debhelper-compat (= 10)
 Standards-Version: 4.3.0
 
 Package: rpd-common
-Architecture: any
+Architecture: all
 Depends: ${misc:Depends}, lxsession, lightdm, pcmanfm, lxterminal, pi-greeter, rpd-plym-splash,
  polkitd, pkexec, pishutdown, libfm-modules, gvfs, gvfs-backends, gvfs-fuse, qt5ct, qt5-style-plugins,
  gtk-nop, gui-pkinst, pprompt, rfkill, mate-polkit-bin, gnome-keyring, desktop-file-utils, raspi-config,
@@ -16,7 +16,7 @@ Description: Common packages used by X and Wayland
  Common applications used by X and Wayland desktops on Raspberry Pi
 
 Package: rpd-x-core
-Architecture: any
+Architecture: all
 Depends: ${misc:Depends}, rpd-common, xserver-xorg, xinit, gldriver-test, xcompmgr, x11-xserver-utils, openbox, lxpanel-pi,
  lxplug-menu, lxplug-updater, lxplug-ejecter, lxplug-bluetooth, lxplug-netman, lxplug-volumepulse, lxplug-batt, lxplug-cpu, lxplug-cputemp,
  lxplug-gpu, lxplug-power, lxplug-clock, lxplug-magnifier
@@ -24,7 +24,7 @@ Description: Packages used by Raspberry Pi Desktop on X
  X-specific packages used by Raspberry Pi Desktop
 
 Package: rpd-wayland-core
-Architecture: any
+Architecture: all
 Depends: ${misc:Depends}, rpd-common, labwc, wf-panel-pi, kanshi, swayidle, wlopm, xsettingsd, swaylock, autotouch, raspi-config,
  wfplug-menu, wfplug-updater, wfplug-ejecter, wfplug-bluetooth, wfplug-netman, wfplug-volumepulse, wfplug-batt, wfplug-cpu, wfplug-cputemp,
  wfplug-gpu, wfplug-power, wfplug-clock, wfplug-connect, wfplug-squeek
@@ -32,33 +32,33 @@ Description: Packages used by Raspberry Pi Desktop on Wayland
  Wayland-specific packages used by Raspberry Pi Desktop
 
 Package: rpd-theme
-Architecture: any
+Architecture: all
 Recommends: ${misc:Depends}, pixtrix-theme, pixtrix-icons, fonts-nunito-sans, fonts-liberation2, rpd-wallpaper,
  rpd-wallpaper-trixie
 Description: Raspberry Pi Desktop theme packages
  Packages containing theme components for Raspberry Pi Desktop
 
 Package: rpd-preferences
-Architecture: any
+Architecture: all
 Recommends: ${misc:Depends}, rpcc, pipanel, rc-gui, raindrop, rasputin, rpinters, rp-prefapps, cups, cups-pk-helper, pi-printer-support
 Description: Raspberry Pi Desktop preference applications
  Preference applications for Raspberry Pi Desktop
 
 Package: rpd-utilities
-Architecture: any
+Architecture: all
 Recommends: ${misc:Depends}, agnostics, rp-bookshelf, mousepad, eom, piclone, lxtask, galculator, xarchiver,
  evince, rpi-connect, rpi-imager, pi-package, piwiz, hunspell-en-gb, hyphen-en-gb, wamerican, wbritish, userguide
 Description: Raspberry Pi Desktop utility applications
  Utility applications for Raspberry Pi Desktop
 
 Package: rpd-applications
-Architecture: any
+Architecture: all
 Recommends: ${misc:Depends}, geany, thonny, vlc, firefox, rpi-firefox-mods, chromium, rpi-chromium-mods, libwidevinecdm0
 Description: Raspberry Pi Desktop general applications
  General applications for Raspberry Pi Desktop
 
 Package: rpd-developer
-Architecture: any
+Architecture: all
 Recommends: ${misc:Depends}, libcamera-tools, rpicam-apps, python3-picamera2, python3-pyqt5, python3-opengl, python3-pygame,
  python3-tk, python3-pgzero, python3-serial, python3-pip, python3-numpy, python3-twython, python3-flask,
  sense-hat, git, meson, openocd
@@ -66,32 +66,32 @@ Description: Raspberry Pi Desktop developer libraries and applications
  Python libraries and camera support
 
 Package: rpd-graphics
-Architecture: any
+Architecture: all
 Recommends: ${misc:Depends}, gstreamer1.0-x, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-plugins-bad,
  gstreamer1.0-alsa, gstreamer1.0-libav, vulkan-tools, mesa-vulkan-drivers, libgles1, libgles2-mesa, ffmpeg
 Description: Raspberry Pi Desktop graphics libraries and applications
  Video and graphics support
 
 Package: rpd-x-extras
-Architecture: any
+Architecture: all
 Recommends: ${misc:Depends}, realvnc-vnc-server, scrot
 Description: X-specific additional packages
  X-specific additional packages used by Raspberry Pi Desktop
 
 Package: rpd-wayland-extras
-Architecture: any
+Architecture: all
 Recommends: ${misc:Depends}, wayvnc, grim, squeekboard
 Description: Wayland-specific additional packages
  Wayland-specific additional packages used by Raspberry Pi Desktop
 
 Package: rpd-x-all
-Architecture: any
+Architecture: all
 Depends: ${misc:Depends}, rpd-x-core, rpd-x-extras, rpd-theme, rpd-preferences, rpd-utilities, rpd-applications, rpd-developer, rpd-graphics
 Description: Complete Raspberry Pi Desktop on X
  Metapackage for complete Raspberry Pi Desktop on X
 
 Package: rpd-wayland-all
-Architecture: any
+Architecture: all
 Depends: ${misc:Depends}, rpd-wayland-core, rpd-wayland-extras, rpd-theme, rpd-preferences, rpd-utilities, rpd-applications, rpd-developer, rpd-graphics
 Description: Complete Raspberry Pi Desktop on Wayland
  Metapackage for complete Raspberry Pi Desktop on Wayland
