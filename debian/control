@@ -12,6 +12,7 @@ Depends: ${misc:Depends}, lxsession, lightdm, pcmanfm, lxterminal, pi-greeter, r
  gtk-nop, gui-pkinst, pprompt, rfkill, mate-polkit-bin, gnome-keyring, desktop-file-utils, raspi-config,
  pulseaudio, pipewire, pipewire-pulse, wireplumber, pulseaudio-module-bluetooth, libspa-0.2-bluetooth,
  network-manager, wpasupplicant, firmware-brcm80211
+Conflicts: raspberrypi-ui-mods, lxde
 Description: Common packages used by X and Wayland
  Common applications used by X and Wayland desktops on Raspberry Pi
 
@@ -20,6 +21,7 @@ Architecture: all
 Depends: ${misc:Depends}, rpd-common, xserver-xorg, xinit, gldriver-test, xcompmgr, x11-xserver-utils, openbox, lxpanel-pi,
  lpplug-menu, lpplug-updater, lpplug-ejecter, lpplug-bluetooth, lpplug-netman, lpplug-volumepulse, lpplug-batt, lpplug-cpu, lpplug-cputemp,
  lpplug-gpu, lpplug-power, lpplug-clock, lpplug-magnifier
+Conflicts: lxpanel
 Description: Packages used by Raspberry Pi Desktop on X
  X-specific packages used by Raspberry Pi Desktop
 
