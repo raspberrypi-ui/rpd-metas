@@ -40,7 +40,7 @@
     <primaryMonitor/>
   </placement>
   <theme>
-    <name>PiXtrix</name>
+    <name>PiXflat</name>
     <titleLayout>LIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -57,51 +57,51 @@
     <invisibleHandles>yes</invisibleHandles>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>Nunito Sans</name>
+      <name>PibotoLt</name>
       <size>12</size>
       <!-- font size in points -->
-      <weight>Light</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>Nunito Sans</name>
+      <name>PibotoLt</name>
       <size>12</size>
       <!-- font size in points -->
-      <weight>Light</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
-      <name>Nunito Sans</name>
+      <name>PibotoLt</name>
       <size>12</size>
       <!-- font size in points -->
-      <weight>Light</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>Nunito Sans</name>
+      <name>PibotoLt</name>
       <size>12</size>
       <!-- font size in points -->
-      <weight>Light</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>Nunito Sans</name>
+      <name>PibotoLt</name>
       <size>12</size>
-      <weight>Light</weight>
+      <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>Nunito Sans</name>
+      <name>PibotoLt</name>
       <size>12</size>
-      <weight>Light</weight>
+      <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
   </theme>

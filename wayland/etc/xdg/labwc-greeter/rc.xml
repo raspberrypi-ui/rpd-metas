@@ -2,25 +2,25 @@
 <openbox_config xmlns="http://openbox.org/3.4/rc">
 
   <theme>
-    <name>PiXtrix</name>
+    <name>PiXflat</name>
     <cornerRadius>0</cornerRadius>
     <keepBorder>yes</keepBorder>
     <font place="ActiveWindow">
-      <name>Nunito Sans</name>
+      <name>PibotoLt</name>
       <size>12</size>
-      <weight>Light</weight>
+      <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
-      <name>Nunito Sans</name>
+      <name>PibotoLt</name>
       <size>12</size>
-      <weight>Light</weight>
+      <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="OnScreenDisplay">
-      <name>Nunito Sans</name>
+      <name>PibotoLt</name>
       <size>12</size>
-      <weight>Light</weight>
+      <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <dropShadows>yes</dropShadows>

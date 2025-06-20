@@ -35,8 +35,7 @@ Description: Packages used by Raspberry Pi Desktop on Wayland
 
 Package: rpd-theme
 Architecture: all
-Recommends: ${misc:Depends}, pixtrix-theme, pixtrix-icons, fonts-nunito-sans, fonts-liberation2, rpd-wallpaper,
- rpd-wallpaper-trixie
+Recommends: ${misc:Depends}, pixflat-theme, pixflat-icons, fonts-piboto, fonts-liberation2, rpd-wallpaper
 Description: Raspberry Pi Desktop theme packages
  Packages containing theme components for Raspberry Pi Desktop
 

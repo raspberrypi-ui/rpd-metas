@@ -1,8 +1,8 @@
 [org.gnome.desktop.interface]
-cursor-theme='PiXtrix'
-font-name='Nunito Sans Light 12'
-gtk-theme='PiXtrix'
-icon-theme='PiXtrix'
+cursor-theme='PiXflat'
+font-name='PibotoLt 12'
+gtk-theme='PiXflat'
+icon-theme='PiXflat'
 
 [org.gnome.desktop.wm.preferences]
 auto-raise=true

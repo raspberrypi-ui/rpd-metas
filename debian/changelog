@@ -1,3 +1,9 @@
+rpd-metas (0.4) trixie; urgency=medium
+
+  * Settings for PiXflat theme
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 20 Jun 2025 08:54:08 +0100
+
 rpd-metas (0.3) bookworm; urgency=medium
 
   * Use new lpplug packages
