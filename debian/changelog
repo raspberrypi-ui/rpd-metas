@@ -1,3 +1,9 @@
+rpd-metas (0.5) trixie; urgency=medium
+
+  * Add dependency on nfs-common
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 30 Jul 2025 13:28:37 +0100
+
 rpd-metas (0.4) trixie; urgency=medium
 
   * Settings for PiXflat theme

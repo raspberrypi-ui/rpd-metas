@@ -11,7 +11,7 @@ Depends: ${misc:Depends}, lxsession, lightdm, pcmanfm, lxterminal, pi-greeter, r
  polkitd, pkexec, pishutdown, libfm-modules, gvfs, gvfs-backends, gvfs-fuse, qt5ct, qt5-style-plugins,
  gtk-nop, gui-pkinst, pprompt, rfkill, mate-polkit-bin, gnome-keyring, desktop-file-utils, raspi-config,
  pulseaudio, pipewire, pipewire-pulse, wireplumber, pulseaudio-module-bluetooth, libspa-0.2-bluetooth,
- network-manager, wpasupplicant, firmware-brcm80211
+ network-manager, wpasupplicant, firmware-brcm80211, nfs-common
 Conflicts: raspberrypi-ui-mods, lxde, lxpanel
 Description: Common packages used by X and Wayland
  Common applications used by X and Wayland desktops on Raspberry Pi
