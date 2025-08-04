@@ -4,7 +4,7 @@ set -e
 
 case "${1}" in
   configure)
-    raspi-config nonint do_wayland W3
+    raspi-config nonint do_wayland W2
     pwdlines=$(getent passwd)
     while read line
     do
