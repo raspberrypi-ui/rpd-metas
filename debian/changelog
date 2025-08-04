@@ -1,3 +1,9 @@
+rpd-metas (0.6) trixie; urgency=medium
+
+  * Change wayland option
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 04 Aug 2025 09:12:33 +0100
+
 rpd-metas (0.5) trixie; urgency=medium
 
   * Add dependency on nfs-common
