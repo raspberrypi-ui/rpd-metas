@@ -1,3 +1,9 @@
+rpd-metas (0.7) trixie; urgency=medium
+
+  * Add dark theme system wallpaper
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 14 Aug 2025 11:12:08 +0100
+
 rpd-metas (0.6) trixie; urgency=medium
 
   * Change wayland option
