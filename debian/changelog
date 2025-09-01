@@ -1,3 +1,9 @@
+rpd-metas (1.1) trixie; urgency=medium
+
+  * Change name of user guide package
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 01 Sep 2025 10:19:25 +0100
+
 rpd-metas (1.0) trixie; urgency=medium
 
   * Trixie version

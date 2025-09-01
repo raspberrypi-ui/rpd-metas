@@ -48,7 +48,7 @@ Description: Raspberry Pi Desktop preference applications
 Package: rpd-utilities
 Architecture: all
 Recommends: ${misc:Depends}, agnostics, rp-bookshelf, mousepad, eom, piclone, lxtask, galculator, xarchiver,
- evince, rpi-connect, rpi-imager, pi-package, piwiz, hunspell-en-gb, hyphen-en-gb, wamerican, wbritish, userguide
+ evince, rpi-connect, rpi-imager, pi-package, piwiz, hunspell-en-gb, hyphen-en-gb, wamerican, wbritish, rpi-userguide
 Description: Raspberry Pi Desktop utility applications
  Utility applications for Raspberry Pi Desktop
 
