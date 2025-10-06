@@ -1,0 +1,77 @@
+rpd-metas are the metapackages used to create the Raspberry Pi Desktop.
+
+There is a hierarchy of metapackages defined:
+
+- Core packages
+- Theme packages
+- Optional packages
+
+Applying all the packages below to a Lite image will produce the equivalent
+of the standard Raspberry Pi Desktop image.
+
+Core packages
+=============
+
+The package rpd-common contains the packages which are always required for
+any desktop environment. This should be installed without recommended packages
+for the cleanest install.
+
+The package rpd-wayland-core contains the packages which are required for
+a basic Wayland-based desktop.
+
+The package rpd-x-core contains the packages which are required for
+a basic X11-based desktop. 
+
+Both the rpx-*-core packages depend on rpd-common, and should
+be installed without recommended packages for the cleanest install.
+
+Unless you need to switch between Wayland and X11 desktops, it should not be
+necessary to install both of rpd-wayland-core and rpd-x-core.
+
+
+Theme packages
+==============
+
+The package rpd-theme installs the packages which contain the look and feel
+of the Raspberry Pi Desktop - the fonts, desktop pictures, icons and GTK theme.
+
+The package rpd-preferences installs the packages which are required for
+the Control Centre preferences application and all plugins. 
+
+In both cases, the packages included are recommended installs rather than
+dependencies, so these packages should be installed with recommended packages.
+
+Both of these metapackages are compatible with both Wayland and X11 desktops.
+
+Installing core + theme packages will give a configurable desktop with the
+Raspberry Pi Desktop look and feel.
+
+
+Optional packages
+=================
+
+The package rpd-utilities installs the contents of the Acccessories menu and
+a few other miscellaneous utilities such as the first-run wizard.
+
+The package rpd-applications installs the Chromium and Firefox web browsers,
+the VLC media player and the programming applications Thonny and Geany.
+
+The package rpd-developer installs various Python libraries used for code
+development, and some camera development libraries, along with some more
+general developer tools such as git and meson.
+
+The package rpd-graphics installs various libraries to support graphics and
+video, such as ffmpeg and gstreamer.
+
+All of these metapackages are compatible with both Wayland and X11 desktops.
+There are two additional metapackages which are specific to particular desktop
+environments:
+
+The package rpd-x-extras installs X11-specific support for screen capture and
+remote desktop access.
+
+The package rpd-wayland-extras installs X11-specific support for screen capture and
+remote desktop access.
+
+In all cases, the packages included are recommended installs rather than
+dependencies, so these packages should be installed with recommended packages.
