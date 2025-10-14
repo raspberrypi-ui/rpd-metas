@@ -54,14 +54,14 @@ Description: Raspberry Pi Desktop utility applications
 
 Package: rpd-applications
 Architecture: any
-Recommends: ${misc:Depends}, geany, thonny, vlc, firefox, rpi-firefox-mods, chromium, rpi-chromium-mods, libwidevinecdm0
+Recommends: ${misc:Depends}, geany, thonny, vlc, firefox [!amd64], firefox-esr [amd64], rpi-firefox-mods, chromium, rpi-chromium-mods, libwidevinecdm0
 Description: Raspberry Pi Desktop general applications
  General applications for Raspberry Pi Desktop
 
 Package: rpd-developer
 Architecture: any
 Recommends: ${misc:Depends}, libcamera-tools, rpicam-apps, python3-picamera2, python3-pyqt5, python3-opengl, python3-pygame,
- python3-tk, python3-pgzero, python3-serial, python3-pip, python3-numpy, python3-twython, python3-flask,
+ python3-tk, python3-pgzero, python3-serial, python3-pip, python3-numpy, python3-flask,
  sense-hat, git, meson, openocd
 Description: Raspberry Pi Desktop developer libraries and applications
  Python libraries and camera support
@@ -69,7 +69,7 @@ Description: Raspberry Pi Desktop developer libraries and applications
 Package: rpd-graphics
 Architecture: any
 Recommends: ${misc:Depends}, gstreamer1.0-x, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-plugins-bad,
- gstreamer1.0-alsa, gstreamer1.0-libav, vulkan-tools, mesa-vulkan-drivers, libgles1, libgles2-mesa, ffmpeg
+ gstreamer1.0-alsa, gstreamer1.0-libav, vulkan-tools, mesa-vulkan-drivers, libgles1, ffmpeg
 Description: Raspberry Pi Desktop graphics libraries and applications
  Video and graphics support
 
