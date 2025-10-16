@@ -1,3 +1,9 @@
+rpd-metas (1.6) trixie; urgency=medium
+
+  * Add alacarte to rpd-utilities
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 16 Oct 2025 12:25:40 +0100
+
 rpd-metas (1.5) trixie; urgency=medium
 
   * Remove some obsolete packages; install firefox-esr on x86
