@@ -1,3 +1,9 @@
+rpd-metas (1.7) trixie; urgency=medium
+
+  * Prevent postinst scripts from running on upgrades
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 20 Oct 2025 14:15:14 +0100
+
 rpd-metas (1.6) trixie; urgency=medium
 
   * Add alacarte to rpd-utilities

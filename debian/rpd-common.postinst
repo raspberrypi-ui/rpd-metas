@@ -4,9 +4,11 @@ set -e
 
 case "${1}" in
   configure)
-    raspi-config nonint do_wayland W1
-    raspi-config nonint do_boot_behaviour B4
-    update-desktop-database /usr/share/raspi-ui-overrides/applications/
+    if [ -z "$2" ]; then
+      raspi-config nonint do_wayland W1
+      raspi-config nonint do_boot_behaviour B4
+      update-desktop-database /usr/share/raspi-ui-overrides/applications/
+    fi
     ;;
 
   abort-upgrade|abort-remove|abort-deconfigure)
