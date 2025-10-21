@@ -1,3 +1,9 @@
+rpd-metas (1.8) trixie; urgency=medium
+
+  * Add support for themeing under Qt 6
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 21 Oct 2025 04:38:16 -0400
+
 rpd-metas (1.7) trixie; urgency=medium
 
   * Prevent postinst scripts from running on upgrades
