@@ -1,11 +1,3 @@
 [Desktop Entry]
-Encoding=UTF-8
-Name=VNC Server
-GenericName=VNC Server
-Comment=Start VNC Server in Service Mode
 Type=Application
-Icon=/usr/share/icons/hicolor/48x48/apps/vncserver48x48.png
-Exec=/usr/bin/pkexec /etc/vnc/vncservice start vncserver-x11-serviced
-Categories=Application;Network;RemoteAccess;
 NoDisplay=true
-
