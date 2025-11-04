@@ -1,3 +1,9 @@
+rpd-metas (1.9) trixie; urgency=medium
+
+  * Tweak Qt6 colours; hide qt6ct menu item
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 04 Nov 2025 13:52:09 +0000
+
 rpd-metas (1.8) trixie; urgency=medium
 
   * Add support for themeing under Qt 6
