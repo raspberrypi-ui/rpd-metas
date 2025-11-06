@@ -1,3 +1,9 @@
+rpd-metas (1.10) trixie; urgency=medium
+
+  * Hide libfm prefapps
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 06 Nov 2025 14:37:43 +0000
+
 rpd-metas (1.9) trixie; urgency=medium
 
   * Tweak Qt6 colours; hide qt6ct menu item
