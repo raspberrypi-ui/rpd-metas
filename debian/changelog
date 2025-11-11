@@ -1,3 +1,9 @@
+rpd-metas (1.11) trixie; urgency=medium
+
+  * Update Qt font descriptions
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 11 Nov 2025 08:27:32 +0000
+
 rpd-metas (1.10) trixie; urgency=medium
 
   * Hide libfm prefapps
