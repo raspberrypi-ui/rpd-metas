@@ -1,3 +1,9 @@
+rpd-metas (1.17) trixie; urgency=medium
+
+  * Add new dock packages
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 20 Apr 2026 10:20:41 +0100
+
 rpd-metas (1.16) trixie; urgency=medium
 
   * Fix for Chromium password; new menu plugin and editor
