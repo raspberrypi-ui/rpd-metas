@@ -23,6 +23,12 @@
       <weight>Light</weight>
       <slant>Normal</slant>
     </font>
+    <font place="MenuItem">
+      <name>Nunito Sans</name>
+      <size>12</size>
+      <weight>Light</weight>
+      <slant>Normal</slant>
+    </font>
     <dropShadows>yes</dropShadows>
     <titlebar>
       <layout>:iconify,max,close</layout>

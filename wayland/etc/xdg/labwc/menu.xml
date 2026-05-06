@@ -1,0 +1,7 @@
+<openbox_menu>
+  <menu id="root-menu">
+    <item label="Desktop Preferences...">
+      <action name="Execute" command="rpcc desktop" />
+    </item>
+  </menu>
+</openbox_menu>

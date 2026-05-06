@@ -1,2 +1,54 @@
 #!/bin/sh
-env GLIBC_TUNABLES=glibc.malloc.mmap_threshold=131072:glibc.malloc.trim_threshold=131072:glibc.malloc.tcache_count=0 pcmanfm --desktop
+
+config_string () {
+    # read config file supplied as argument
+    FILE=$(grep '^wallpaper=' $1 2> /dev/null | head -1 | cut -d= -f2-)
+    MODE=$(grep '^wallpaper_mode=' $1 2> /dev/null | head -1 | cut -d= -f2-)
+    COLOUR=$(grep '^desktop_bg=' $1 2> /dev/null | head -1 | cut -d= -f2-)
+    
+    # get defaults for any undefined values - assumes system defaults for both monitors are identical
+    if [ -z $FILE ] ; then FILE=$(grep '^wallpaper=' /etc/xdg/pcmanfm/default/desktop-items-0.conf | head -1 | cut -d= -f2-) ; fi
+    if [ -z $MODE ] ; then MODE=$(grep '^wallpaper_mode=' /etc/xdg/pcmanfm/default/desktop-items-0.conf | head -1 | cut -d= -f2-) ; fi
+    if [ -z $COLOUR ] ; then COLOUR=$(grep '^desktop_bg=' /etc/xdg/pcmanfm/default/desktop-items-0.conf | head -1 | cut -d= -f2-) ; fi
+
+    # remap mode if needed
+    case $MODE in
+      crop)    SMODE="-m fill" ;;
+      color)   SMODE="-m solid_color" ;;
+      *)       SMODE="-m $MODE" ;;
+    esac
+
+    # extract colour bytes
+    if [ ${#COLOUR} -gt 7 ] ; then
+      SCOLOUR="-c $(echo $COLOUR | cut --characters=2,3,6,7,10,11)"
+    else
+      SCOLOUR="-c $(echo $COLOUR | cut --characters=2,3,4,5,6,7)"
+    fi
+    
+    if [ -z $FILE ] ; then
+      SFILE=""
+    else
+      SFILE="-i $FILE"
+    fi
+    
+    echo $SMODE $SCOLOUR $SFILE
+}
+
+# check for shared bg - assumes system default is not common desktops
+GCONF="$HOME/.config/pcmanfm/default/pcmanfm.conf"
+
+if pgrep labwc > /dev/null && grep -q "use_swaybg=1" $GCONF 2> /dev/null; then
+  if grep -q "common_bg=1" $GCONF 2> /dev/null; then
+    # single config for all outputs
+    ARGS=$(config_string "$HOME/.config/pcmanfm/default/desktop-items-0.conf")
+  else
+    # read per monitor configs
+    ARGS=""
+    for MON in $(wlr-randr | grep ^[^[:blank:]] | cut -d ' ' -f 1); do
+        ARGS=$ARGS" -o $MON "$(config_string "$HOME/.config/pcmanfm/default/desktop-items-$MON.conf")
+    done
+  fi
+  swaybg $ARGS 2> /dev/null
+else
+  env GLIBC_TUNABLES=glibc.malloc.mmap_threshold=131072:glibc.malloc.trim_threshold=131072:glibc.malloc.tcache_count=0 pcmanfm --desktop
+fi
