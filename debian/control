@@ -28,7 +28,7 @@ Package: rpd-wayland-core
 Architecture: any
 Depends: ${misc:Depends}, rpd-common, labwc, wf-panel-pi, kanshi, swayidle, wlopm, xsettingsd, swaylock, autotouch, raspi-config,
  wfplug-menu, wfplug-updater, wfplug-ejecter, wfplug-bluetooth, wfplug-netman, wfplug-volumepulse, wfplug-batt, wfplug-cpu, wfplug-cputemp,
- wfplug-gpu, wfplug-power, wfplug-clock, wfplug-connect, wfplug-squeek, wfplug-imenu, wfplug-wlist
+ wfplug-gpu, wfplug-power, wfplug-clock, wfplug-connect, wfplug-squeek, wfplug-imenu, wfplug-wlist, swaybg
 Description: Packages used by Raspberry Pi Desktop on Wayland
  Wayland-specific packages used by Raspberry Pi Desktop
 
@@ -82,7 +82,7 @@ Description: X-specific additional packages
 
 Package: rpd-wayland-extras
 Architecture: any
-Recommends: ${misc:Depends}, wayvnc, grim, squeekboard
+Recommends: ${misc:Depends}, wayvnc, grim, gui-screenshot, squeekboard
 Description: Wayland-specific additional packages
  Wayland-specific additional packages used by Raspberry Pi Desktop
 

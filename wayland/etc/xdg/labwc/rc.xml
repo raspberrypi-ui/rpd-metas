@@ -106,7 +106,12 @@
     </keybind>
     <keybind key="Print">
       <action name="Execute">
-        <command>grim</command>
+        <command>gui-screenshot</command>
+      </action>
+    </keybind>
+    <keybind key="A-Print">
+      <action name="Execute">
+        <command>gui-screenshot -a</command>
       </action>
     </keybind>
     <keybind key="C-A-m">
