@@ -150,8 +150,7 @@
       </mousebind>
      </context>
     <context name="Root">
-      <mousebind button="Left" action="Press">
-      </mousebind>
+      <mousebind button="Left" action="Press" />
      </context>
   </mouse>
 
