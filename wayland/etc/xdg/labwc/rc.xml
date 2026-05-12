@@ -149,6 +149,10 @@
         <action name="ZoomOut" />
       </mousebind>
      </context>
+    <context name="Root">
+      <mousebind button="Left" action="Press">
+      </mousebind>
+     </context>
   </mouse>
 
   <windowRules>
