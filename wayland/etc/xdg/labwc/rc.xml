@@ -190,6 +190,8 @@
   <touch deviceName="11-005d Goodix Capacitive TouchScreen" mapToOutput="DSI-2" mouseEmulation="yes" />
   <touch deviceName="6-005d Goodix Capacitive TouchScreen" mapToOutput="DSI-1" mouseEmulation="yes" />
   <touch deviceName="4-005d Goodix Capacitive TouchScreen" mapToOutput="DSI-2" mouseEmulation="yes" />
+  <touch deviceName="10-0041 ili_v3" mapToOutput="DSI-1" mouseEmulation="yes" />
+  <touch deviceName="11-0041 ili_v3" mapToOutput="DSI-2" mouseEmulation="yes" />
 
 </openbox_config>
 
