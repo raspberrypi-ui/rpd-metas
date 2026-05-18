@@ -4,5 +4,7 @@ Icon=gnome-help
 Name=Help
 Name[en_GB]=Help
 Name[it]=Aiuto
+Name[pl]=Pomoc
 Comment=Reference material
 Comment[en_GB]=Reference material
+Comment[pl]=Materiały pomocnicze
