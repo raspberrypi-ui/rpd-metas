@@ -1,8 +1,14 @@
-rpd-metas (1.17) trixie; urgency=medium
+rpd-metas (1.18) trixie; urgency=medium
 
   * Add new dock packages
 
- -- Simon Long <simon@raspberrypi.com>  Mon, 20 Apr 2026 10:20:41 +0100
+ -- Simon Long <simon@raspberrypi.com>  Wed, 10 Jun 2026 14:42:41 +0100
+
+rpd-metas (1.17) trixie; urgency=medium
+
+  * Add new touchscreen associations
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 10 Jun 2026 14:39:23 +0100
 
 rpd-metas (1.16) trixie; urgency=medium
 
