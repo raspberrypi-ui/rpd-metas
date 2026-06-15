@@ -1,8 +1,14 @@
-rpd-metas (1.18) trixie; urgency=medium
+rpd-metas (1.19) trixie; urgency=medium
 
   * Add new dock packages
 
- -- Simon Long <simon@raspberrypi.com>  Wed, 10 Jun 2026 14:42:41 +0100
+ -- Simon Long <simon@raspberrypi.com>  Mon, 15 Jun 2026 11:44:41 +0100
+
+rpd-metas (1.18) trixie; urgency=medium
+
+  * Remove python3-flask
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 15 Jun 2026 11:39:10 +0100
 
 rpd-metas (1.17) trixie; urgency=medium
 

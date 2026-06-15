@@ -62,8 +62,7 @@ Description: Raspberry Pi Desktop general applications
 Package: rpd-developer
 Architecture: any
 Recommends: ${misc:Depends}, libcamera-tools, rpicam-apps, python3-picamera2, python3-pyqt5, python3-opengl, python3-pygame,
- python3-tk, python3-pgzero, python3-serial, python3-pip, python3-numpy, python3-flask,
- sense-hat, git, meson, openocd
+ python3-tk, python3-pgzero, python3-serial, python3-pip, python3-numpy, sense-hat, git, meson, openocd
 Description: Raspberry Pi Desktop developer libraries and applications
  Python libraries and camera support
 
