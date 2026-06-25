@@ -75,7 +75,7 @@
     <keybind key="C-A-t">
       <action name="Execute" command="lxterminal" />
     </keybind>
-    <keybind key="C-A-space">
+    <keybind key="C-A-Space">
       <action name="Execute" command="gui-pkinst orca reboot" />
     </keybind>
     <keybind key="C-A-Delete">
