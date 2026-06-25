@@ -54,13 +54,13 @@
     <keybind key="C-A-Down">
       <action name="UnMaximize" />
     </keybind>
-    <keybind key="XF86AudioRaiseVolume">
+    <keybind key="XF86_AudioRaiseVolume">
       <action name="Execute" command="wfpanelctl volumepulse volu" />
     </keybind>
-    <keybind key="XF86AudioLowerVolume">
+    <keybind key="XF86_AudioLowerVolume">
       <action name="Execute" command="wfpanelctl volumepulse vold" />
     </keybind>
-    <keybind key="XF86AudioMute">
+    <keybind key="XF86_AudioMute">
       <action name="Execute" command="wfpanelctl volumepulse mute" />
     </keybind>
     <keybind key="Super_L" onRelease="yes">
@@ -81,7 +81,7 @@
     <keybind key="C-A-Delete">
       <action name="Execute" command="pishutdown" />
     </keybind>
-    <keybind key="XF86PowerOff" onRelease="yes">
+    <keybind key="XF86_PowerOff" onRelease="yes">
       <action name="Execute" command="pwrkey" />
     </keybind>
     <keybind key="Print">
