@@ -75,7 +75,7 @@
     <keybind key="C-A-t">
       <action name="Execute" command="lxterminal" />
     </keybind>
-    <keybind key="C-A-Space">
+    <keybind key="C-A-space">
       <action name="Execute" command="gui-pkinst orca reboot" />
     </keybind>
     <keybind key="C-A-Delete">
@@ -87,7 +87,7 @@
     <keybind key="Print">
       <action name="Execute" command="gui-screenshot" />
     </keybind>
-    <keybind key="A-Print">
+    <keybind key="C-Print">
       <action name="Execute" command="gui-screenshot -a" />
     </keybind>
     <keybind key="C-A-m">
@@ -128,6 +128,9 @@
 
   <windowRules>
     <windowRule identifier="Kodi" serverDecoration="yes" />
+    <windowRule identifier="rpcc" title="Edit Shortcut">
+      <action name="ToggleKeybinds" />
+    </windowRule>
   </windowRules>
 
   <snapping>
