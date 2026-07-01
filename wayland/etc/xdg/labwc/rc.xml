@@ -42,6 +42,7 @@
     <keybind key="A-Right" />
     <keybind key="A-Up" />
     <keybind key="A-Down" />
+    <keybind key="A-F3" />
     <keybind key="C-A-Left">
       <action name="SnapToEdge" direction="left" />
     </keybind>
@@ -98,6 +99,9 @@
     </keybind>
     <keybind key="A-F2">
       <action name="Execute" command="gui-runcmd" />
+    </keybind>
+    <keybind key="W-Return">
+      <action name="Execute" command="lxterminal"/>
     </keybind>
   </keyboard>
 
