@@ -132,7 +132,7 @@
 
   <windowRules>
     <windowRule identifier="Kodi" serverDecoration="yes" />
-    <windowRule identifier="rpcc" title="Edit Shortcut">
+    <windowRule identifier="pished_edit_shortcut">
       <action name="ToggleKeybinds" />
     </windowRule>
   </windowRules>
