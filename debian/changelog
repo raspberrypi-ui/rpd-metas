@@ -1,3 +1,9 @@
+rpd-metas (1.21) trixie; urgency=medium
+
+  * Use pcmanfm-pi instead of pcmanfm
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 28 Jul 2026 08:26:20 +0100
+
 rpd-metas (1.20) trixie; urgency=medium
 
   * Modify for new panel XML and shortcut editor
