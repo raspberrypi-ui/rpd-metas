@@ -1,3 +1,9 @@
+rpd-metas (1.23) trixie; urgency=medium
+
+  * Use a wildcard for the menu keyboard shortcut
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 31 Jul 2026 10:24:30 +0100
+
 rpd-metas (1.22) trixie; urgency=medium
 
   * Only enable libliftoff on Pi hardware
