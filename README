@@ -70,7 +70,7 @@ environments:
 The package rpd-x-extras installs X11-specific support for screen capture and
 remote desktop access.
 
-The package rpd-wayland-extras installs X11-specific support for screen capture and
+The package rpd-wayland-extras installs Wayland-specific support for screen capture and
 remote desktop access.
 
 In all cases, the packages included are recommended installs rather than
