@@ -41,7 +41,7 @@ Description: Raspberry Pi Desktop theme packages
 
 Package: rpd-preferences
 Architecture: any
-Recommends: ${misc:Depends}, rpcc, pipanel, rc-gui, raindrop, rasputin, rpinters, rp-prefapps, cups, cups-pk-helper, pi-printer-support, merp
+Recommends: ${misc:Depends}, rpcc, pipanel, rc-gui, raindrop, rasputin, rpinters, rp-prefapps, cups, cups-pk-helper, pi-printer-support, merp, pished
 Description: Raspberry Pi Desktop preference applications
  Preference applications for Raspberry Pi Desktop
 
