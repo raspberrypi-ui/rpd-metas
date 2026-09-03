@@ -38,11 +38,6 @@
   <keyboard>
     <numlock>off</numlock>
     <default />
-    <keybind key="A-Left" />
-    <keybind key="A-Right" />
-    <keybind key="A-Up" />
-    <keybind key="A-Down" />
-    <keybind key="A-F3" />
     <keybind key="C-A-Left">
       <action name="SnapToEdge" direction="left" />
     </keybind>
@@ -74,7 +69,7 @@
       <action name="Execute" command="wfpanelctl bluetooth menu" />
     </keybind>
     <keybind key="C-A-t">
-      <action name="Execute" command="lxterminal" />
+      <action name="Execute" command="lab-sensible-terminal" />
     </keybind>
     <keybind key="C-A-space">
       <action name="Execute" command="gui-pkinst orca reboot" />
@@ -99,9 +94,6 @@
     </keybind>
     <keybind key="A-F2">
       <action name="Execute" command="gui-runcmd" />
-    </keybind>
-    <keybind key="W-Return">
-      <action name="Execute" command="lxterminal"/>
     </keybind>
   </keyboard>
 

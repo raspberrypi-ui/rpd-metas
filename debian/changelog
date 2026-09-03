@@ -1,3 +1,9 @@
+rpd-metas (1.27) trixie; urgency=medium
+
+  * Update keybindings for labwc 0.20
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 03 Sep 2026 09:59:32 +0100
+
 rpd-metas (1.26) trixie; urgency=medium
 
   * Version bump for build
