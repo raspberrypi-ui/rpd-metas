@@ -138,9 +138,6 @@
 		<Menuname>Settings</Menuname>
 		<Separator/>
 		<Merge type="files"/>
-		<Filename>gui-runcmd.desktop</Filename>
-		<Separator/>
-		<Filename>pishutdown.desktop</Filename>
 	</Layout>
 
 </Menu>

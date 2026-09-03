@@ -1,3 +1,9 @@
+rpd-metas (1.28) trixie; urgency=medium
+
+  * Move Run from top level of menu to Accessories
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 03 Sep 2026 14:57:49 +0100
+
 rpd-metas (1.27) trixie; urgency=medium
 
   * Update keybindings for labwc 0.20
