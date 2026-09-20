@@ -1,3 +1,9 @@
+rpd-metas (1.30) trixie; urgency=medium
+
+  * Handle desktop picture file names with spaces in pcmanfm-pi
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 18 Sep 2026 08:05:33 +0100
+
 rpd-metas (1.29) trixie; urgency=medium
 
   * Set taskbar icon correctly for polkit authentication dialog
