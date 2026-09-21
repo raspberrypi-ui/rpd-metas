@@ -1,3 +1,9 @@
+rpd-metas (1.31) trixie; urgency=medium
+
+  * Stop hiding LibreOffice start centre
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 21 Sep 2026 08:09:23 +0100
+
 rpd-metas (1.30) trixie; urgency=medium
 
   * Handle desktop picture file names with spaces in pcmanfm-pi
