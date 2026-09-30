@@ -1,3 +1,9 @@
+rpd-metas (1.32) trixie; urgency=medium
+
+  * Add xwayland as a dependency of rpd-wayland-core
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 30 Sep 2026 15:18:07 +0100
+
 rpd-metas (1.31) trixie; urgency=medium
 
   * Stop hiding LibreOffice start centre
