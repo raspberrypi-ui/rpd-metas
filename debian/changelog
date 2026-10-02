@@ -1,3 +1,9 @@
+rpd-metas (1.33) trixie; urgency=medium
+
+  * Add wlr-randr as a dependency of rpd-wayland-core
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 02 Oct 2026 09:13:57 +0100
+
 rpd-metas (1.32) trixie; urgency=medium
 
   * Add xwayland as a dependency of rpd-wayland-core
