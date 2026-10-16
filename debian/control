@@ -12,7 +12,7 @@ Depends: ${misc:Depends}, lxsession, lightdm, pcmanfm-pi, lxterminal, pi-greeter
  rpi-gui-nop, gui-pkinst, pprompt, rfkill, mate-polkit-bin, gnome-keyring, desktop-file-utils, raspi-config,
  pipewire, pipewire-pulse, wireplumber, libspa-0.2-bluetooth, network-manager, wpasupplicant,
  firmware-brcm80211, nfs-common, fonts-droid-fallback, fonts-noto-mono, qt6ct, gui-runcmd, libpam-gnome-keyring,
- qt6ct, qt6gtk2
+ qt6ct, qt6gtk2, brightnessctl
 Conflicts: raspberrypi-ui-mods, lxde, lxpanel
 Description: Common packages used by X and Wayland
  Common applications used by X and Wayland desktops on Raspberry Pi
