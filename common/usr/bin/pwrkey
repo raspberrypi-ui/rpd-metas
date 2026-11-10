@@ -2,8 +2,7 @@
 if ! pgrep -f pishutdown ; then
   /usr/bin/pishutdown
 else
-  PITYPE=$(rcn nonint get_pi_type)
-  if [ "$PITYPE" -ne 45 ]; then
+  if ! rcn nonint get_matching_pis 45 > /dev/null; then
     /usr/bin/pkill orca
     /sbin/shutdown -h now
   fi
