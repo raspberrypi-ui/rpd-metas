@@ -12,14 +12,16 @@ if [ ! -f "$HOME/.config/kanshi/config" ] ; then
   touch "$HOME/.config/kanshi/config"
 fi
 
-if raspi-config nonint is_pi ; then
+PIGEN=$(rcn nonint get_pi_gen)
+
+if [ "$PIGEN" -ne 0 ]; then
     export WLR_DRM_FORCE_LIBLIFTOFF=1
 
-    if ! raspi-config nonint gpu_has_mmu ; then
+    if [ "$PIGEN" -ne 4 ] && [ "$PIGEN" -ne 5 ]; then
         export WLR_RENDERER=pixman
     fi
 fi
 
-exec /usr/bin/labwc -m $@
+exec /usr/bin/labwc -m "$@"
 
 

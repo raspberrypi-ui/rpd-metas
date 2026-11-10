@@ -5,8 +5,10 @@ set -e
 case "${1}" in
   configure)
     if [ -z "$2" ]; then
-      raspi-config nonint do_wayland W1
-      raspi-config nonint do_boot_behaviour B4
+      rcn nonint set_wayland 1 || true
+      rcn nonint set_boot_desktop 0 || true
+      rcn nonint set_autologin_cli 0 || true
+      rcn nonint set_autologin_desktop 0 || true
       update-desktop-database /usr/share/raspi-ui-overrides/applications/
     fi
     ;;

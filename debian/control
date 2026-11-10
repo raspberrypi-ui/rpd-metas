@@ -12,7 +12,7 @@ Depends: ${misc:Depends}, lxsession, lightdm, pcmanfm-pi, lxterminal, pi-greeter
  rpi-gui-nop, gui-pkinst, pprompt, rfkill, mate-polkit-bin, gnome-keyring, desktop-file-utils, raspi-config,
  pipewire, pipewire-pulse, wireplumber, libspa-0.2-bluetooth, network-manager, wpasupplicant,
  firmware-brcm80211, nfs-common, fonts-droid-fallback, fonts-noto-mono, qt6ct, gui-runcmd, libpam-gnome-keyring,
- qt6ct, qt6gtk2, brightnessctl
+ qt6ct, qt6gtk2, brightnessctl, rcn
 Conflicts: raspberrypi-ui-mods, lxde, lxpanel
 Description: Common packages used by X and Wayland
  Common applications used by X and Wayland desktops on Raspberry Pi
@@ -27,7 +27,7 @@ Description: Packages used by Raspberry Pi Desktop on X
 
 Package: rpd-wayland-core
 Architecture: any
-Depends: ${misc:Depends}, rpd-common, labwc, wf-panel-pi, kanshi, swayidle, wlopm, xsettingsd, swaylock, autotouch, raspi-config,
+Depends: ${misc:Depends}, rpd-common, labwc, wf-panel-pi, kanshi, swayidle, wlopm, xsettingsd, swaylock, autotouch,
  wfplug-menu, wfplug-updater, wfplug-ejecter, wfplug-bluetooth, wfplug-netman, wfplug-volumepulse, wfplug-batt, wfplug-cpu, wfplug-cputemp,
  wfplug-gpu, wfplug-power, wfplug-clock, wfplug-connect, wfplug-squeek, wfplug-imenu, wfplug-wlist, swaybg, xwayland, wlr-randr
 Description: Packages used by Raspberry Pi Desktop on Wayland
