@@ -1,3 +1,9 @@
+rpd-metas (1.36) trixie; urgency=medium
+
+  * Modify for rcn
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 11 Nov 2026 11:37:30 +0000
+
 rpd-metas (1.35) trixie; urgency=medium
 
   * Add brightnessctl as a dependency
