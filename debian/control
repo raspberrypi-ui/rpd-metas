@@ -56,7 +56,7 @@ Description: Raspberry Pi Desktop utility applications
 
 Package: rpd-applications
 Architecture: any
-Recommends: ${misc:Depends}, geany, thonny, vlc, firefox [!amd64], firefox-esr [amd64], rpi-firefox-mods, chromium, rpi-chromium-mods, libwidevinecdm0
+Recommends: ${misc:Depends}, geany, thonny, vlc, browser-choice, rpi-firefox-mods, rpi-chromium-mods, libwidevinecdm0
 Description: Raspberry Pi Desktop general applications
  General applications for Raspberry Pi Desktop
 
