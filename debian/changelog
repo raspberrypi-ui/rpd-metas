@@ -1,3 +1,9 @@
+rpd-metas (1.37) trixie; urgency=medium
+
+  * Add additional packages so they install independently of Firefox
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 17 Nov 2026 15:03:10 +0000
+
 rpd-metas (1.36) trixie; urgency=medium
 
   * Modify for rcn
