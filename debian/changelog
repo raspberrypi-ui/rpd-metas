@@ -1,3 +1,15 @@
+rpd-metas (1.39) trixie; urgency=medium
+
+  * Add xdg-desktop-portal-gtk
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 25 Nov 2026 15:01:51 +0000
+
+rpd-metas (1.38) trixie; urgency=medium
+
+  * Remove rcn changes for release
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 25 Nov 2026 07:45:50 +0000
+
 rpd-metas (1.37) trixie; urgency=medium
 
   * Add additional packages so they install independently of Firefox
